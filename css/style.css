@@ -658,3 +658,53 @@ icons
 .icon-pd{
   padding:0 10% 3% 10%;
 }
+
+.icon-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .icon-pd{
+    padding:3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .last-icon{
+    padding:3%;
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .icon-pd{
+    padding:3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .last-icon{
+    padding:3%;
+    margin-left: 8%;
+  }
+}
+
+
+.mobileShow {display: none;} 
+
+  /* Smartphone Portrait and Landscape  */
+   @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 600px){ 
+      .mobileShow {display: inline;}
+  }
+
+  .mobileHide { display: inline; } 
+
+  /* Smartphone Portrait and Landscape  */
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 600px){ 
+     .mobileHide { display: none;}
+  }
