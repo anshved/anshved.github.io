@@ -628,3 +628,19 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+
+/* ====================================
+icons
+==================================== */
+.icon-effect img{
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.icon-effect img:hover{
+  -webkit-filter: none;
+    filter: none;
+}
