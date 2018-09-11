@@ -664,47 +664,154 @@ icons
   margin-right: auto;
 }
 
-@media only screen and (max-width: 650px) {
-  .icon-pd{
-    padding:3%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.skills-section h3 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 0 50px;
+  line-height: 1.5;
+}
 
-  .last-icon{
-    padding:3%;
-    margin-left: 1%;
+@media screen and (max-width: 768px) {
+  .skills-section h3 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 350px) {
-  .icon-pd{
-    padding:3%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.skills-section .skill-icon {
+  padding-bottom: 15px;
+  height: 120px;
+}
 
-  .last-icon{
-    padding:3%;
-    margin-left: 8%;
+@media screen and (max-width: 360px) {
+  .skills-section .skill-icon {
+      padding-bottom: 0;
+      height: 100px;
   }
 }
 
+.skills-section .skill-icon img {
+  margin: 0 auto;
+  width: 75px;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
 
-.mobileShow {display: none;} 
+.skills-section .skill-icon img:hover {
+  -webkit-filter: none;
+  filter: none;
+}
 
-  /* Smartphone Portrait and Landscape  */
-   @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 600px){ 
-      .mobileShow {display: inline;}
+@media screen and (min-width: 450px) {
+  .skills-section .skill-icon img#html {
+      width: 55px;
   }
-
-  .mobileHide { display: inline; } 
-
-  /* Smartphone Portrait and Landscape  */
-  @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 600px){ 
-     .mobileHide { display: none;}
+  .skills-section .skill-icon img#css {
+      width: 55px;
   }
+  .skills-section .skill-icon img#sass {
+      margin-top: 15px;
+  }
+  .skills-section .skill-icon img#js {
+      width: 55px;
+  }
+  .skills-section .skill-icon img#node {
+      width: 100px;
+  }
+}
+
+@media screen and (min-width: 985px) {
+  .skills-section .skill-icon img#node {
+      margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills-section .skill-icon img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* ======= Waypoints ======= */
+
+/* .wp1,
+.wp2,
+.wp3,
+.wp3-1,
+.wp3-2,
+.wp3-3,
+.wp3-4,
+.wp3-5,
+.wp4,
+.wp5,
+.wp6 {
+    visibility: hidden;
+}
+
+.bounceIn,
+.bounceInLeft,
+.bounceInRight,
+.bounceInDown,
+.fadeIn,
+.fadeInUp,
+.fadeInUpDelay,
+.fadeInDown,
+.fadeInLeft,
+.fadeInRight,
+.slideInUp,
+.slideInDown,
+.slideInLeft,
+.slideInRight,
+.zoomIn,
+.swing,
+.pulse,
+.bounce,
+.progress1-delay,
+.progress2-delay,
+.progress3-delay,
+.progress4-delay,
+.progress5-delay {
+    visibility: visible;
+}
+
+.delay-01s {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+
+.delay-02s {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+.delay-025s {
+    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
+}
+
+.delay-05s {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.delay-4s {
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+.delay-4-5s {
+    animation-delay: 4.5s;
+    -webkit-animation-delay: 4.5s;
+} */
+
