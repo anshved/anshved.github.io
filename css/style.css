@@ -645,3 +645,7 @@ icons
   -webkit-filter: none;
     filter: none;
 }
+
+.icon-pd{
+  padding:0 10% 3% 10%;
+}
