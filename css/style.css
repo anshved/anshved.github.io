@@ -227,7 +227,7 @@ nav ul li a {
 }
 
 .logo img {
-  width: 100px;
+  /* width: 100px; */
   height: 50px;
 }
 
@@ -326,13 +326,13 @@ nav ul li a {
 #about .about-descr .p-heading {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
-  text-align: left;
+  text-align: justify;
 }
 
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 /*-----------------------------------------------------------------------------------*/
