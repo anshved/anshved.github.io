@@ -49,9 +49,38 @@ h4 {
   font-weight: 600;
 }
 
+body.night h2 {
+  color: #e7e7e7;
+  font-weight: 600;
+}
+
+body.night h4 {
+  color: #e7e7e7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 a {
   color: #292929;
   text-decoration: none !important;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+body.night a{
+  color: #eee;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+body.night a:hover{
+  color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -484,7 +513,7 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: #b8a07e;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -603,7 +632,7 @@ nav ul li a {
   height: auto;
   width: 100%;
   /* background: #f7f7f7; */
-  background: url("../images/resumebg.jpg") fixed center;
+  background: url("../images/resumebg1.jpg") fixed center;
   background-size: cover;
   padding-bottom: 60px;
   position: relative;
