@@ -8,10 +8,12 @@
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
 
-body {
+body,html {
   background: #ffffff;
   /* background: #000; */
-  color: #898989;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444452;
   font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -195,6 +197,106 @@ img.background {
   filter: blur(5px);
 }
 
+body.night,
+html.night {
+  background-color: #171c28;
+  color: #afafbf;
+}
+body.night ::-moz-selection,
+html.night ::-moz-selection {
+  color: #36363c;
+  background: #ffdc00;
+}
+body.night ::selection,
+html.night ::selection {
+  color: #36363c;
+  background: #ffdc00;
+}
+
+body.night .switch-wrapper .sun,
+html.night .switch-wrapper .sun {
+  background: url(../switch/sun-white.svg) no-repeat center;
+  background-size: 100%;
+}
+body.night .switch-wrapper .moon,
+html.night .switch-wrapper .moon {
+  background: url(../switch/moon-white.svg) no-repeat center;
+  background-size: 100%;
+}
+
+.switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+@media screen and (max-width: 480px) {
+  .switch-wrapper {
+    top: 10px;
+    right: 20px;
+  }
+}
+.switch-wrapper .moon,
+.switch-wrapper .sun {
+  width: 17px;
+  height: 17px;
+}
+.switch-wrapper .sun {
+  background: url(../switch/sun.svg) no-repeat center;
+  background-size: 100%;
+}
+.switch-wrapper .moon {
+  background: url(../switch/moon.svg) no-repeat center;
+  background-size: 100%;
+}
+.switch-wrapper .toggle-wrapper {
+  margin: 10px;
+}
+.switch-wrapper .toggle-wrapper #switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.switch-wrapper .toggle-wrapper #switch:checked + label {
+  background: #bae67e;
+}
+.switch-wrapper .toggle-wrapper #switch:checked + label:after {
+  left: calc(100% - 3px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.switch-wrapper .toggle-wrapper label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.switch-wrapper .toggle-wrapper label:after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 100%;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  Navbar Top
 /*-----------------------------------------------------------------------------------*/
@@ -206,9 +308,14 @@ nav {
   width: 100%;
   padding: 20px;
   display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.80);
+  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.80);
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.80);
+}
+
+.night nav{
+  background:#060b17;
+
 }
 
 .nav-menu {
@@ -324,6 +431,10 @@ nav ul li a {
   padding-top: 190px;
 }
 
+.night #about{
+  background:#060b17;
+}
+
 #about .div-img-bg {
   padding-bottom: 30px;
   /* border: 20px solid #b8a07e; */
@@ -359,6 +470,11 @@ nav ul li a {
   background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
+}
+
+.night #services {
+  background:#060b17;
+
 }
 
 .owl-item {
@@ -638,6 +754,11 @@ nav ul li a {
   background: #f7f7f7;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.night #footer{
+  background:#060b17;
+
 }
 
 #footer .socials-media {
