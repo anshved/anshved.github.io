@@ -265,12 +265,12 @@ html.night .switch-wrapper .moon {
   align-items: center;
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 15px;
 }
 @media screen and (max-width: 480px) {
   .switch-wrapper {
-    top: 10px;
-    right: 20px;
+    top: 23px;
+    right: 45px;
   }
 }
 .switch-wrapper .moon,
@@ -352,6 +352,7 @@ nav {
   line-height: 32px;
   margin-bottom: 0;
   padding-top: 16px;
+  margin-right: 50px;
 }
 
 nav ul li {
