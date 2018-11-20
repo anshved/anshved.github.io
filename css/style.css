@@ -524,6 +524,7 @@ nav ul li a {
   background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
+  text-align: center;
 }
 
 .night #services {
@@ -538,11 +539,15 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #b8a07e;
+  color: #977653;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
+}
+
+.night .services-block span {
+  color: #b8a07e;
 }
 
 .services-block .separator {
@@ -553,8 +558,12 @@ nav ul li a {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #977653;
   line-height: 44px;
+}
+
+.night .services-block i{
+  color: #b8a07e;
 }
 
 .services-carousel .owl-stage-outer {
@@ -579,6 +588,10 @@ nav ul li a {
 }
 
 .services-carousel .owl-dot.active {
+  background-color: #977653;
+}
+
+.night .services-carousel .owl-dot.active {
   background-color: #b8a07e;
 }
 
