@@ -1,10 +1,3 @@
-/*
-  Theme Name: Folio
-  Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-*/
-
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
 
@@ -594,24 +587,24 @@ nav ul li a {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  Portfolio
+/*  project
 /*-----------------------------------------------------------------------------------*/
 
-#portfolio {
+#project {
   position: relative;
   padding-bottom: 50px;
 }
 
-#portfolio .portfolio-list {
+#project .project-list {
   margin-bottom: 50px;
 }
 
-#portfolio .portfolio-list .nav {
+#project .project-list .nav {
   display: inline-block;
   margin: 0;
 }
 
-#portfolio .portfolio-list .nav li {
+#project .project-list .nav li {
   margin: 0 40px 0 0;
   float: left;
   font-size: 14px;
@@ -629,12 +622,12 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-.night #portfolio .portfolio-list .nav li{
+.night #project .project-list .nav li{
   color: #e7e7e7;
 }
 
-#portfolio .portfolio-list .nav li:hover,
-#portfolio .portfolio-list .nav li.filter-active {
+#project .project-list .nav li:hover,
+#project .project-list .nav li.filter-active {
   color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -643,18 +636,18 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-container {
+#project .project-container {
   display: inline-block;
   margin-bottom: 50px;
   width: 100%;
 }
 
-.portfolio-thumbnail {
+.project-thumbnail {
   margin-bottom: 30px;
   overflow: hidden;
 }
 
-.portfolio-thumbnail img {
+.project-thumbnail img {
   width: 100%;
   height: 250px;
 }
