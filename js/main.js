@@ -107,16 +107,16 @@ $(document).ready(function() {
   // ========================================================================= //
 
 
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
+  var projectIsotope = $('.project-container').isotope({
+    itemSelector: '.project-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
+  $('#project-flters li').on( 'click', function() {
+    $("#project-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    projectIsotope.isotope({ filter: $(this).data('filter') });
   });
 
 
