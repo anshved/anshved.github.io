@@ -140,8 +140,20 @@ color: #e7e7e7;
 }
 
 .btn {
-  background: #333;
-  border: medium none;
+  background: #222;
+  border: solid 1px #222;
+  border-radius: 0;
+  color: #fff;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+
+.night .btn {
+  background: #222;
+  border: solid 1px #fff;
   border-radius: 0;
   color: #fff;
   font-size: 12px;
@@ -235,7 +247,7 @@ img.background {
 body.night,
 html.night {
   background-color: #171c28;
-  color: #afafbf;
+  color: #e7e7e7;
 }
 body.night ::-moz-selection,
 html.night ::-moz-selection {
@@ -829,7 +841,23 @@ nav ul li a {
 #contact {
   height: auto;
   width: 100%;
-  padding-top: 0 !important; 
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ),url("../images/getintouch.png") fixed center;
+  background-size: cover;
+  /* padding-top: 90 !important;  */
+}
+
+.night #contact {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),url("../images/getintouch.png") fixed center;
+  background-size: cover;
+  /* padding-top: 90 !important;  */
 }
 
 #contact i{
