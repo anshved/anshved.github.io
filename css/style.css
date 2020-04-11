@@ -294,8 +294,8 @@ html.night .switch-wrapper .moon {
 }
 @media screen and (max-width: 480px) {
   .switch-wrapper {
-    top: 28px;
-    right: 45px;
+    top: 50px;
+    right: 65px;
   }
 }
 .switch-wrapper .moon,
@@ -711,6 +711,107 @@ nav ul li a {
   height: 250px;
 }
 
+/*-----------------------------------------------------------------------------------*/
+/*  achievements
+/*-----------------------------------------------------------------------------------*/
+
+#achievements {
+  position: relative;
+  padding-bottom: 90px !important;
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding-top: 90px;
+}
+
+.night #achievements{
+  background:#060b17;
+}
+
+#achievements .bullet::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0px;
+  background: #b8a07e;
+  border: 2px solid #b8a07e;
+}
+
+#achievements p{
+  margin-top: -5px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+#achievements h3{
+  margin-top: -5px;
+  text-align: left;
+}
+
+#achievements .line{
+  border-left: solid 2px;
+}
+
+#achievements .achievements-list {
+  margin-bottom: 50px;
+}
+
+#achievements .achievements-list .nav {
+  display: inline-block;
+  margin: 0;
+}
+
+#achievements .achievements-list .nav li {
+  margin: 0 20px 0 20px;
+  float: left;
+  font-size: 14px;
+  color: #444452;
+  line-height: 16px;
+  cursor: pointer;
+  font-family: "Poppins", helvetica;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.night #achievements .achievements-list .nav li{
+  color: #e7e7e7;
+}
+
+#achievements .achievements-list .nav li:hover,
+#achievements .achievements-list .nav li.filter-active {
+  color: #b8a07e;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#achievements .achievements-container {
+  display: inline-block;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.achievements-thumbnail {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.achievements-thumbnail img {
+  width: 100%;
+  height: 250px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  resume
@@ -1144,4 +1245,6 @@ icons
   }
 }
 
-
+/* ========================================
+Scroll Bar
+=========================================== */
