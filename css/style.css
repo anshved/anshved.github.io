@@ -537,8 +537,8 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  /* border: 20px solid #b8a07e; */
-  border: 20px solid #333333;
+  border: 20px solid #b8a07e;
+  /* border: 20px solid #333333; */
 }
 
 #about .div-img-bg .about-img img {
@@ -1142,54 +1142,24 @@ icons
   height: auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .skills-section .skill-icon img:hover {
   -webkit-filter: none;
   filter: none;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
   /* transform: scale(1.1); */
 }
 
-.skills-section .skill-icon p{
-  display: none;
-  background-color: #f7f7f7;
-  z-index: 9999;
-  /* right: 25px; */
-  position: absolute;
-  text-align: center;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  width: 300%;
-}
-
-.skills-section .skill-icon:hover p{
-  display: block;
-  z-index: 9999;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .skills-section h3 {
