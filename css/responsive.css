@@ -91,7 +91,7 @@
 
 @media (max-width: 767px) {
   /* Navbar */
-  nav {
+  nav .row {
     padding: 20px 15px;
   }
   .nav-menu {
@@ -162,7 +162,7 @@
 
 @media (max-width: 600px) {
   /* Navbar */
-  nav {
+  nav .row{
     padding: 20px 15px;
   }
   .nav-menu {
@@ -233,7 +233,7 @@
 
 @media (max-width: 480px) {
   /* Navbar */
-  nav {
+  nav .row {
     padding: 20px 15px;
   }
   .nav-menu {

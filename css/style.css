@@ -294,8 +294,8 @@ html.night .switch-wrapper .moon {
 }
 @media screen and (max-width: 480px) {
   .switch-wrapper {
-    top: 50px;
-    right: 65px;
+    top: 30px;
+    right: 50px;
   }
 }
 .switch-wrapper .moon,
