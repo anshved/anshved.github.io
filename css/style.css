@@ -22,6 +22,13 @@ body,html {
   box-sizing: border-box;
 }
 
+hr{
+  width: 50px;
+  height: 5px;
+  background-color: #b8a07e;
+  border: none;
+}
+
 h1,
 h2,
 h3,
@@ -995,7 +1002,7 @@ icons
 
 .skills-section .skill-icon {
   padding-bottom: 15px;
-  height: 120px;
+  height: 100px;
 }
 
 @media screen and (max-width: 360px) {
