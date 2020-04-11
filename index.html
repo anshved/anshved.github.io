@@ -85,6 +85,10 @@
         </ul>
       </div>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
+  </div>
   </nav>
   <!-- End section navbar -->
 
@@ -137,14 +141,14 @@
   <div id="about" class="paddsection">
     <div class="container">
       <div class="row justify-content-between">
-        <div class="col-lg-4 ">
+        <div class="col-md-4 ">
           <div class="div-img-bg">
             <div class="about-img">
               <img src="images/ansh.jpeg" class="img-responsive" alt="me">
             </div>
           </div>
         </div>
-        <div class="col-md-push-1 col-lg-7">
+        <div class="col-md-push-1 col-md-7">
           <div class="about-descr">
 
             <p class="p-heading">Hey! My name is Ansh, I am a UX / UI designer who loves clean, simple & unique design. </p>
@@ -355,7 +359,7 @@
             </ul>
           </div>
           <div class="project-container">
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
+            <div class="col-md-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
               <a target="_blank" href="http://ieee.shahandanchor.com/">
                 <img src="images/ieeesakec.png" alt="img">
                 <p class="separator">Designed the Frontend for our college IEEE website which is currently being used by 400+
@@ -363,21 +367,21 @@
                 <p class="separator">Technologies Leveraged: PHP, MySQL, Bootstrap, HTML, CSS, FPDF.</p>
               </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
+            <div class="col-md-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
               <a target="_blank" href="http://dreamweaver.co.in/">
                 <img src="images/dreamweaver.png" alt="img">
                 <p class="separator">Developed the Frontend and Backend for a dynamic Movie Producitons Website with a user-friendly Admin Panel to control the content.</p>
                 <p class="separator">Technologies Leveraged: PHP, MySQL, Bootstrap, HTML, CSS, Javascript.</p>
               </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all app">
+            <div class="col-md-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all app">
               <a class="popup-img" href="images/klassic.jpeg">
                 <img src="images/klassic.jpeg" alt="img">
                 <p class="separator">Built an Android Admin app to keep a track of the Stock. Admin can Add/Edit/Delete the Stock. A notification is sent to all the devices when a Stock is Added or Edited.</p>
                 <p class="separator">Technologies Leveraged: Ionic, Angular, Firebase, Cordova, Node.</p>
               </a>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
+            <div class="col-md-4 col-md-6 col-sm-12 col-xs-12 project-thumbnail all webdesign">
               <a target="_blank" href="https://anshved.github.io/simple-javascript-projects/">
                 <img src="images/javascript.jpeg" alt="img">
                 <p class="separator">Developed these HTML pages using Javascript. These are based on Vanilla JavaScript. These pages are made for Computer Devices and may not behave properly on Mobile Devices.</p>
@@ -398,7 +402,7 @@
 
       <div class="contact-block1">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <div class="contact-contact">
               <h2 class="mb-30">GET IN TOUCH</h2>
               <p>For Any Opportunities In The Fields Of My Interest
@@ -416,30 +420,30 @@
             </div>
           </div>
 
-          <div class="col-lg-offset-2 col-lg-6">
+          <div class="col-md-offset-2 col-md-6">
             <form target="_blank" action="https://formspree.io/vedaansh98@gmail.com" method="post">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                   <div class="form-group contact-block1">
                     <input type="text" name="name" class="form-control" placeholder="Your Name"/>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                   <div class="form-group">
                     <input type="email" class="form-control" name="_replyto" placeholder="Your Email"/>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <div class="form-group">
                     <input type="text" class="form-control" name="subject" placeholder="Subject"/>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <div class="form-group">
                     <textarea class="form-control" name="message" rows="12" placeholder="Message"></textarea>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-12">
                   <input type="submit" class="btn btn-defeault btn-send" value="Send message">
                 </div>
               </div>
@@ -515,8 +519,20 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <!-- Google Analytics -->
   <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"78751fffd7964105",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
-
+  <!-- Progree bar -->
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 </body>
 
 </html>
