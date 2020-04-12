@@ -72,6 +72,7 @@ a {
 
 body.night a{
   color: #eee;
+  text-decoration: none !important;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -88,6 +89,10 @@ body.night a:hover{
   transition: all 0.5s ease-in-out 0s;
 }
 
+body.night a:active{
+  color: #b8a07e !important;
+}
+
 a:hover {
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -97,9 +102,13 @@ a:hover {
 }
 
 a:hover,
-a:focus {
+a:focus, a:active {
   color: #b8a07e;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+
+.smoothScroll.active{
+  color: #b8a07e;
 }
 
 nav ul li a {
