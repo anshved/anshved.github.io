@@ -546,6 +546,10 @@ nav ul li a {
   padding-top: 190px;
 }
 
+#about .name{
+text-transform: uppercase;
+}
+
 .night #about{
   background:#060b17;
 }
@@ -567,8 +571,10 @@ nav ul li a {
 
 #about .about-descr .p-heading {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 25px;
   text-align: justify;
+  margin-top: -20px !important;
+  line-height: 35px;
 }
 
 #about .about-descr .separator {
