@@ -68,6 +68,20 @@ $(document).ready(function() {
     }
   }
 
+  // Achievements scroll fade start
+  $(window).scroll(function(){
+
+    $('.red-cube').each(function() {
+        if($(window).scrollTop() >= $(this).offset().top + $(this).height() || $(window).scrollTop() < $(this).offset().top -200)
+            $(this).addClass('show');
+        else
+            $(this).removeClass('show');
+        if($(window).scrollTop() >= $(this).offset().top + $(this).height() || $(window).scrollTop() < $(this).offset().top -400)
+            $(this).removeClass('show');
+    });
+    
+    });
+    // Achievements scroll fade ends
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //

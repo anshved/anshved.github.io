@@ -416,9 +416,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="container">
+          <div class="container ">
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>SAKEC Research Cell</h3>
@@ -439,7 +439,7 @@
             </div>
             <!-- achievements end -->
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>IEEE SAKEC</h3>
@@ -455,7 +455,7 @@
             </div>
             <!-- achievements end -->
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube ">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>SAKEC Student Council</h3>
@@ -471,7 +471,7 @@
             </div>
             <!-- achievements end -->
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube ">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>Star Certification</h3>
@@ -486,7 +486,7 @@
             </div>
             <!-- achievements end -->
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>Institution Innovation Council</h3>
@@ -504,7 +504,7 @@
             </div>
             <!-- achievements end -->
             <!-- achievement -->
-            <div class="row">
+            <div class="row red-cube">
               <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-1">
                   <h3>IIT Bombay</h3>
@@ -524,6 +524,12 @@
     </div>
   </div>
   <!-- End section achievements -->
+
+  <!-- <div style="padding:20px" id="element" class="red-cube" >Red Cube
+  <p style=" position: absolute;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, dicta. Voluptatum exercitationem et fugiat quaerat voluptate natus illo commodi facere iste non quo atque, deserunt ratione nulla ea deleniti architecto!</p>
+  </div> -->
+  
+  
 
   <!-- start sectoion contact -->
   <div id="contact" class="paddsection">
@@ -661,6 +667,19 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
+  </script>
+  <script>
+
+$(window).scroll(function(){
+    if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top + 50)
+        $('#element').addClass('show');
+    else
+        $('#element').removeClass('show');  
+
+    if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top - 50)
+        $('#element').removeClass('show');
+});
+
   </script>
 </body>
 
