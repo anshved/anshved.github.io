@@ -128,9 +128,15 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+
+nav ul li a.active {
+  color: #b8a07e;
+}
+
 body.night nav ul li a{
   color: #e7e7e7;
 }
+
 
 p {
   margin: 25px 0;
