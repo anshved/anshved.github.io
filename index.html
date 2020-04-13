@@ -81,6 +81,9 @@
             <a href="#project" class="smoothScroll">Projects</a>
           </li>
           <li>
+            <a href="#achievements" class="smoothScroll">Achievements</a>
+          </li>
+          <li>
             <a href="#contact" class="smoothScroll">Contact</a>
           </li>
         </ul>
@@ -137,6 +140,16 @@
     </div>
   </div>
   <!-- End section header -->
+
+<!-- ==============================
+  Gears on scroll
+============================== -->
+
+<!-- <video id="v0"  tabindex="0", autobuffer preload type="video/webm;" src="gear.webm">
+
+</video> -->
+
+<!-- end gears on scroll -->
 
   <!-- start section about us -->
   <div id="about" class="paddsection">
@@ -681,6 +694,35 @@
 // });
 
   </script>
+
+<!-- gear on scroll -->
+
+<!-- <script>
+  var frameNumber = 0, // start video at frame 0
+      // lower numbers = faster playback
+      playbackConst = 1000, // Set to 1000 to make the playback slower
+      // get page height from video duration
+      setHeight = document.getElementById("set-height"),
+      // select video element         
+      vid = document.getElementById('v0');
+  
+  // dynamically set the page height according to video length
+  vid.addEventListener('loadedmetadata', function () {
+      setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+  });
+  
+  // Use requestAnimationFrame for smooth playback
+  function scrollPlay() {
+      var frameNumber = window.pageYOffset / playbackConst;
+      vid.currentTime = frameNumber;
+      window.requestAnimationFrame(scrollPlay);
+  }
+  
+  window.requestAnimationFrame(scrollPlay);
+      </script> -->
+
+  <!-- gear on scroll end     -->
+
 </body>
 
 </html>

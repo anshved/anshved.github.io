@@ -573,12 +573,11 @@ text-transform: uppercase;
   font-family: "Playfair Display", serif;
   font-size: 25px;
   text-align: justify;
-  margin-top: -20px !important;
   line-height: 35px;
 }
 
 #about .about-descr .separator {
-  max-width: 80%;
+  max-width: 93%;
   margin-bottom: 0;
   text-align: justify;
 }
@@ -1253,4 +1252,12 @@ Scroll Bar
 
 .achievement-fixed{
   position: sticky;
+}
+
+#v0 {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 70px;
+  z-index: 1;
 }
