@@ -1240,18 +1240,17 @@ icons
 Scroll Bar
 =========================================== */
 .red-cube{
-  /* background: #171c28; */
   margin: 0 auto;
   display: block;
-  /* padding: 40px 0; */
-  /* text-align: center; */
-  /* color: #fff; */
-  /* font-size: 40px; */
-  /* font-weight: bold; */
   opacity: 0;
-  transition: 2.5s ease-out;
+  transition: 2s ease-out;
 }
 
 .red-cube.show{
   opacity: 1;
+  transition: 0.6s;
+}
+
+.achievement-fixed{
+  position: sticky;
 }

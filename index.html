@@ -407,7 +407,7 @@
 
   <!-- start section achievements -->
   <div id="achievements" class="text-center paddsection">
-    <div class="container">
+    <div id="element" class="container">
       <div class="section-title text-center">
         <h2>My Achievements</h2>
         <hr>
@@ -670,15 +670,15 @@
   </script>
   <script>
 
-$(window).scroll(function(){
-    if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top + 50)
-        $('#element').addClass('show');
-    else
-        $('#element').removeClass('show');  
+// $(window).scroll(function(){
+//     if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top + 50)
+//         $('#element').addClass('achievement-fixed');
+//     else
+//         $('#element').removeClass('achievement-fixed');  
 
-    if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top - 50)
-        $('#element').removeClass('show');
-});
+//     if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top - 50)
+//         $('#element').removeClass('achievement-fixed');
+// });
 
   </script>
 </body>
