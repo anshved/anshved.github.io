@@ -41,7 +41,7 @@
   <link href="css/responsive.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="images/anshvedfavicon.png">
+  <link rel="shortcut icon" href="images/ansh logo 2020.png">
 
 </head>
 
@@ -343,7 +343,7 @@
   <!-- end section skills -->
 
   <!-- start section resume -->
-  <div id="resume" class="text-left paddsection">
+  <div id="resume" style="z-index: 10;" class="text-left paddsection">
     <div class="container">
       <div class="row">
         <div class="text-center">
@@ -360,13 +360,24 @@
 
   <!-- start section project -->
   <div id="project" class="text-center paddsection">
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>My Projects</h2>
+    <img style="width: 300px; left: -150px; top: -150px;" src="gears/1.png" class="leftgear">
+    <img style="width: 250px; left: 125px; top: 25px;" src="gears/2.png" class="rightgear" >
+    <img style="width: 100px; left: 365px; top: 15px;" src="gears/3.png" class="leftgear" >
+    <img style="width: 250px; left: 465px; top: 15px;" src="gears/4.png" class="rightgear"  >
+    <img style="width: 350px; left: 740px; top: -50px;" src="gears/5.png" class="leftgear"  >
+    <img style="width: 225px; left: 1100px; top: 100px;" src="gears/6.png" class="rightgear" >
+    <img style="width: 225px; left: 1075px; top: -150px;" src="gears/8.png" class="leftgear">
+    <img style="width: 100px; left: 1275px; top: 30px;" src="gears/3.png" class="leftgear" >
+    <img style="width: 225px; left: 0px; top: 275px;" src="gears/7.png" class="leftgear">
+    <div style="z-index: 999;" class="container">
+      <div style="z-index: 999; position: relative;" class="section-title text-center">
+        <h2 style="z-index: 999;" >My Projects</h2>
         <hr>
       </div>
     </div>
+
     <div class="container">
+
       <div class="row">
         <div class="col-md-12">
           <div class="project-list">
@@ -541,8 +552,6 @@
   <!-- <div style="padding:20px" id="element" class="red-cube" >Red Cube
   <p style=" position: absolute;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, dicta. Voluptatum exercitationem et fugiat quaerat voluptate natus illo commodi facere iste non quo atque, deserunt ratione nulla ea deleniti architecto!</p>
   </div> -->
-  
-  
 
   <!-- start sectoion contact -->
   <div id="contact" class="paddsection">
@@ -722,6 +731,14 @@
       </script> -->
 
   <!-- gear on scroll end     -->
+
+  <script>
+    $(window).scroll(function() {
+var theta = $(window).scrollTop() / 200 % Math.PI;
+$('.leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
+$('.rightgear').css({  transform: 'rotate(-' + theta + 'rad)' });
+});
+  </script>
 
 </body>
 

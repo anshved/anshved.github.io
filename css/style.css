@@ -1261,3 +1261,16 @@ Scroll Bar
   width: 70px;
   z-index: 1;
 }
+
+.rightgear { 
+  position: absolute;
+  z-index: 0;
+  filter: opacity(0.7);
+  background: fixed;
+}
+
+.leftgear{
+  position: absolute;
+  z-index: 0;
+  filter: opacity(0.7);
+}
