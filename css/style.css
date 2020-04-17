@@ -671,7 +671,7 @@ text-transform: uppercase;
 
 #project {
   position: relative;
-  padding-bottom: 0 !important;
+  /* padding-bottom: 0 !important; */
 }
 
 #project .project-list {
@@ -1350,3 +1350,10 @@ Scroll Bar
 .night .leftgear{
   filter: opacity(0.9);
 }
+
+@media screen and (max-width: 450px) {
+
+  .content-desktop {display: none;}
+  .content-mobile {display: block;}
+  
+  }
