@@ -52,7 +52,7 @@ $(document).ready(function() {
         }, 800, function(){
      
           // Add hash (#) to URL when done scrolling (default click behavior)
-          // window.location.hash = hash ;
+          // window.location.hash = hash;
         });
       }  // End if
     });
@@ -82,6 +82,14 @@ $(document).ready(function() {
     
     });
     // Achievements scroll fade ends
+
+    // Gears start
+    $(window).scroll(function () {
+      var theta = $(window).scrollTop() / 200 % Math.PI;
+      $('.leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
+      $('.rightgear').css({ transform: 'rotate(-' + theta + 'rad)' });
+    });
+    // Gears end
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //

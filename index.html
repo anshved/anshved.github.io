@@ -976,7 +976,7 @@
   <script src="js/main.js"></script>
   <!-- Google Analytics -->
   <script>!function (e, t, a) { var c = e.head || e.getElementsByTagName("head")[0], n = e.createElement("script"); n.async = !0, n.defer = !0, n.type = "text/javascript", n.src = t + "/static/js/chat_widget.js?config=" + JSON.stringify(a), c.appendChild(n) }(document, "https://app.engati.com", { bot_key: "78751fffd7964105", welcome_msg: true, branding_key: "default", server: "https://app.engati.com", e: "p" });</script>
-  <!-- Progree bar -->
+  <!-- Progress bar -->
   <script>
     // When the user scrolls the page, execute myFunction 
     window.onscroll = function () { myFunction() };
@@ -987,55 +987,6 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
-  </script>
-  <script>
-
-// $(window).scroll(function(){
-//     if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top + 50)
-//         $('#element').addClass('achievement-fixed');
-//     else
-//         $('#element').removeClass('achievement-fixed');  
-
-//     if($(window).scrollTop() >= $("#element").offset().top + $("#element").height() || $(window).scrollTop() < $("#element").offset().top - 50)
-//         $('#element').removeClass('achievement-fixed');
-// });
-
-  </script>
-
-  <!-- gear on scroll -->
-
-  <!-- <script>
-  var frameNumber = 0, // start video at frame 0
-      // lower numbers = faster playback
-      playbackConst = 1000, // Set to 1000 to make the playback slower
-      // get page height from video duration
-      setHeight = document.getElementById("set-height"),
-      // select video element         
-      vid = document.getElementById('v0');
-  
-  // dynamically set the page height according to video length
-  vid.addEventListener('loadedmetadata', function () {
-      setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-  });
-  
-  // Use requestAnimationFrame for smooth playback
-  function scrollPlay() {
-      var frameNumber = window.pageYOffset / playbackConst;
-      vid.currentTime = frameNumber;
-      window.requestAnimationFrame(scrollPlay);
-  }
-  
-  window.requestAnimationFrame(scrollPlay);
-      </script> -->
-
-  <!-- gear on scroll end     -->
-
-  <script>
-    $(window).scroll(function () {
-      var theta = $(window).scrollTop() / 200 % Math.PI;
-      $('.leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
-      $('.rightgear').css({ transform: 'rotate(-' + theta + 'rad)' });
-    });
   </script>
 
 </body>
