@@ -1351,9 +1351,20 @@ Scroll Bar
   filter: opacity(0.9);
 }
 
-@media screen and (max-width: 450px) {
+.mobileShow {display: none;} 
 
-  .content-desktop {display: none;}
-  .content-mobile {display: block;}
-  
+  /* Smartphone Portrait and Landscape  */
+   @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileShow {display: block;}
+  }
+
+  .mobileHide { display: block; } 
+
+  /* Smartphone Portrait and Landscape  */
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+     .mobileHide { display: none;}
   }
