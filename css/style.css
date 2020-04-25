@@ -905,6 +905,11 @@ font-size: 30px;
 /*  resume
 /*-----------------------------------------------------------------------------------*/
 .img-responsive{
+  filter: brightness(80%);
+}
+
+
+.night .img-responsive{
   filter: brightness(70%);
 }
 
