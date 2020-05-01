@@ -1064,13 +1064,14 @@
             clearInterval(counter);
             fadeOut(preloader);
         }
-    },30);
+    },25);
     //  fadeout
     function fadeOut(element) {
         element.style.opacity = 1;
 
         (function fade() {
-            if ((element.style.opacity -= .1) < 0) {
+            if ((element.style.opacity -= .05) < 0) {
+              // element.style.transition = "ease-in-out"
                 element.style.display = 'none';
                 document.body.classList.remove('body-height');
             } else {
