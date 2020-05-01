@@ -44,7 +44,7 @@ body .preloader .counter {
   font-family: Poppins;
   font-size: 7rem;
   font-weight: 900;
-  color: #000;
+  color: #fff;
   mix-blend-mode: difference;
 }
 body .preloader .loader {
@@ -56,14 +56,6 @@ body .preloader .loader {
 }
 
 body .preloader h3{
-  position: absolute;
-  color: #000;
-  mix-blend-mode: difference;
-  top: 60%;
-  font-size: 4rem;
-}
-
-body.night .preloader h3{
   position: absolute;
   color: #fff;
   mix-blend-mode: difference;
@@ -79,13 +71,7 @@ body.night .preloader h3{
   display: block;
 }
 
-.light-mode{
-  display: block;
-}
 
-.night .light-mode{
-  display: none;
-}
 
 body.night .preloader {
   position: fixed;
@@ -115,6 +101,22 @@ body.night .preloader .loader {
   left: 0;
   height: 100%;
   background: #000;
+}
+
+body.night .preloader h3{
+  position: absolute;
+  color: #fff;
+  mix-blend-mode: difference;
+  top: 60%;
+  font-size: 4rem;
+}
+
+.light-mode{
+  display: block;
+}
+
+.night .light-mode{
+  display: none;
 }
 
 
