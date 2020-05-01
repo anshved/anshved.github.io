@@ -49,7 +49,13 @@
   <meta name="google-site-verification" content="BQuFsuLYdgo-CSj327ohAUx19TECnN_WE2ZW2KcEPzg" />
 </head>
 
-<body>
+<body class="body-height">
+  <div class="preloader">
+    <div class="loader"></div>
+    <div class="counter"></div>
+    <h3 class="dark-mode">DARK MODE</h3>
+    <h3 class="light-mode">LIGHT MODE</h3>
+  </div>
 
   <!-- start section navbar -->
   <nav id="main-nav">
@@ -1040,6 +1046,46 @@
     //   removeDefaultCursor: false,
     // })
   </script>
+
+
+<!-- preloader start -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    let element = document.querySelector('.counter');
+    let loader = document.querySelector('.loader');
+    let preloader = document.querySelector('.preloader');
+    let count = 0;
+    let counter = setInterval(() => {
+        if (count <= 100) {
+            element.textContent = count + '%';
+            loader.style.width = count + '%';
+            count++;
+        } else {
+            clearInterval(counter);
+            fadeOut(preloader);
+        }
+    },30);
+    //  fadeout
+    function fadeOut(element) {
+        element.style.opacity = 1;
+
+        (function fade() {
+            if ((element.style.opacity -= .1) < 0) {
+                element.style.display = 'none';
+            } else {
+                requestAnimationFrame(fade);
+            }
+        })();
+    }
+});
+  </script>
+  <script>
+  setTimeout(function(){
+    $('.body-height').removeClass('body-height');
+  },3500);
+  </script>
+  <!-- preloader end -->
+
 
 </body>
 

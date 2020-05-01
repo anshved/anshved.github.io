@@ -22,6 +22,94 @@ body,html {
   box-sizing: border-box;
 }
 
+.body-height{
+height: 100vh;
+}
+
+body .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2147483646;
+  overflow-x: hidden;
+
+}
+body .preloader .counter {
+  position: absolute;
+  font-family: Poppins;
+  font-size: 7rem;
+  font-weight: 900;
+  color: #000;
+  mix-blend-mode: difference;
+}
+body .preloader .loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+body .preloader h3{
+  position: absolute;
+  color: #fff;
+  mix-blend-mode: difference;
+  top: 60%;
+}
+
+.dark-mode{
+  display: none;
+}
+
+.night .dark-mode{
+  display: block;
+}
+
+.light-mode{
+  display: block;
+}
+
+.night .light-mode{
+  display: none;
+}
+
+body.night .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2147483646;
+  overflow-x: hidden;
+
+}
+body.night .preloader .counter {
+  position: absolute;
+  font-family: Poppins;
+  font-size: 7rem;
+  font-weight: 900;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+body.night .preloader .loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #000;
+}
+
+
 hr{
   width: 50px;
   height: 5px;
