@@ -58,9 +58,18 @@ body .preloader .loader {
 
 body .preloader h3{
   position: absolute;
+  color: #000;
+  mix-blend-mode: difference;
+  top: 60%;
+  font-size: 4rem;
+}
+
+body.night .preloader h3{
+  position: absolute;
   color: #fff;
   mix-blend-mode: difference;
   top: 60%;
+  font-size: 4rem;
 }
 
 .dark-mode{
