@@ -1072,17 +1072,13 @@
         (function fade() {
             if ((element.style.opacity -= .1) < 0) {
                 element.style.display = 'none';
+                document.body.classList.remove('body-height');
             } else {
                 requestAnimationFrame(fade);
             }
         })();
     }
 });
-  </script>
-  <script>
-  setTimeout(function(){
-    $('.body-height').removeClass('body-height');
-  },3500);
   </script>
   <!-- preloader end -->
 
