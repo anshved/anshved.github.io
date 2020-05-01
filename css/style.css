@@ -171,6 +171,7 @@ color: #e7e7e7;
   line-height: 50px;
   padding: 0 30px;
   text-transform: uppercase;
+  cursor: none !important;
 }
 
 .night .btn {
@@ -345,7 +346,6 @@ html.night .switch-wrapper .moon {
   transform: translateX(-100%);
 }
 .switch-wrapper .toggle-wrapper label {
-  cursor: pointer;
   text-indent: -9999px;
   width: 45px;
   height: 15px;
