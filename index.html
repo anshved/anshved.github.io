@@ -983,6 +983,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="js/toggle.js"></script>
   <script src="lib/kursor/kursor.js"></script>
+  <script src="js/preloader.js"></script>
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
@@ -1008,44 +1009,6 @@
       kursorx.hidden(false)
     }
   </script>
-
-
-<!-- preloader start -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    let element = document.querySelector('.counter');
-    let loader = document.querySelector('.loader');
-    let preloader = document.querySelector('.preloader');
-    let count = 0;
-    let counter = setInterval(() => {
-        if (count <= 100) {
-            element.textContent = count + '%';
-            loader.style.width = count + '%';
-            count++;
-        } else {
-            clearInterval(counter);
-            fadeOut(preloader);
-        }
-    },25);
-    //  fadeout
-    function fadeOut(element) {
-        element.style.opacity = 1;
-
-        (function fade() {
-            if ((element.style.opacity -= .05) < 0) {
-              // element.style.transition = "ease-in-out"
-                element.style.display = 'none';
-                document.body.classList.remove('body-height');
-            } else {
-                requestAnimationFrame(fade);
-            }
-        })();
-    }
-});
-  </script>
-  <!-- preloader end -->
-
-
 </body>
 
 </html>
