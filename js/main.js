@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
   }
 
-   // ========================================================================= //
+  // ========================================================================= //
   //  ACHIEVEMENTS FADE-IN-OUT
   // ========================================================================= //
   $(window).scroll(function(){
@@ -139,7 +139,7 @@ $(document).ready(function() {
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
 
-      // ========================================================================= //
+  // ========================================================================= //
   //  PROGRESS BAR
   // ========================================================================= //
     window.onscroll = function () { myFunction() };
@@ -151,4 +151,21 @@ $(document).ready(function() {
       document.getElementById("myBar").style.width = scrolled + "%";
     }
 
+
+  // ========================================================================= //
+  //  CUSTOM CURSOR
+  // ========================================================================= //
+    var kursorx = new kursor({
+      type: 1,
+      // color: '#b8a07e',
+      removeDefaultCursor: true
+    })
+  
+  
+    function mouseenter () {
+      kursorx.hidden()
+    }
+    function mouseleave () {
+      kursorx.hidden(false)
+    }
 });
