@@ -22,17 +22,6 @@ $(document).ready(function() {
     });
 
     $(this).addClass('active');
-
-    // var target = this.hash,
-    //     menu = target;
-
-    // target = $(target);
-    // $('html, body').stop().animate({
-    //   'scrollTop': target.offset().top - 80
-    // }, 500, 'swing', function() {
-    //   window.location.hash = target.selector;
-    //   $(document).on("scroll", onScroll);
-    // });
   });
 
     // Add smooth scrolling on all links inside the navbar
@@ -68,7 +57,9 @@ $(document).ready(function() {
     }
   }
 
-  // Achievements scroll fade start
+   // ========================================================================= //
+  //  ACHIEVEMENTS FADE-IN-OUT
+  // ========================================================================= //
   $(window).scroll(function(){
 
     $('.red-cube').each(function() {
@@ -81,15 +72,18 @@ $(document).ready(function() {
     });
     
     });
-    // Achievements scroll fade ends
+   
 
-    // Gears start
+   // ========================================================================= //
+  //  GEARS
+  // ========================================================================= //
     $(window).scroll(function () {
       var theta = $(window).scrollTop() / 200 % Math.PI;
       $('.leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
       $('.rightgear').css({ transform: 'rotate(-' + theta + 'rad)' });
     });
-    // Gears end
+    
+
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
@@ -144,5 +138,17 @@ $(document).ready(function() {
       responsiveClass: true,
       responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
     });
+
+      // ========================================================================= //
+  //  PROGRESS BAR
+  // ========================================================================= //
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
 
 });
