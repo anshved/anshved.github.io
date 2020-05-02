@@ -350,10 +350,6 @@ color: #e7e7e7;
   background: #b8a07e;
 }
 
-.mb-30 {
-  margin-bottom: 30px;
-}
-
 img.background {
   width: 100%;
   height: 100%;
@@ -1159,7 +1155,7 @@ font-size: 30px;
   line-height: 24px;
 }
 
-/*-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------*/
 /*  Contact
 /*-----------------------------------------------------------------------------------*/
 
@@ -1167,8 +1163,8 @@ font-size: 30px;
   height: auto;
   width: 100%;
   background: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.82),
+    rgba(255, 255, 255, 0.82)
   ),url("../images/getintouch.png") fixed center;
   background-size: cover;
   /* padding-top: 90 !important;  */
@@ -1178,16 +1174,13 @@ font-size: 30px;
   height: auto;
   width: 100%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
   ),url("../images/getintouch.png") fixed center;
   background-size: cover;
   /* padding-top: 90 !important;  */
 }
 
-#contact i{
-  font-size: 250%;
-}
 
 .contact-details {
   list-style: none;
@@ -1198,6 +1191,7 @@ font-size: 30px;
 .contact-details li {
   padding-bottom: 10px;
 }
+
 
 #contact input,
 #contact textarea {
@@ -1238,12 +1232,43 @@ font-size: 30px;
   font-size: 13px;
 }
 
+#contact .button{
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  /* padding: 2px 3px; */
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 -3px 0 #b8a07e;
+  box-shadow: inset 0 -3px 0 #b8a07e;
+  /* margin-bottom: 40px; */
+  font-size: 15px;
+  padding: 10px 15px;
+  color: #444452;
+  margin: 0 0px 40px 0;
+}
+
+#contact .button:hover{
+  -webkit-box-shadow: inset 0 -43px 0 0 #b8a07e;
+  box-shadow: inset 0 -43px 0 0 #b8a07e;
+  color: #fff;
+}
+
+.night #contact .button{
+  color: #e7e7e7;
+}
+
+.night #contact .button:hover{
+  color: #222222;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: #ffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1260,7 +1285,7 @@ font-size: 30px;
 #footer .socials-media ul {
   display: inline-block;
   float: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 #footer .socials-media ul li {
@@ -1305,7 +1330,7 @@ font-size: 30px;
 }
 
 .credits {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /* ====================================
