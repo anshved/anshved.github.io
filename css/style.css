@@ -1172,7 +1172,7 @@ font-size: 30px;
   background: linear-gradient(
     rgba(255, 255, 255, 0.82),
     rgba(255, 255, 255, 0.82)
-  ),url("../images/getintouch.png") fixed center;
+  ),url("../images/getintouch.jpg") fixed center;
   background-size: cover;
   /* padding-top: 90 !important;  */
   position: relative;
@@ -1184,7 +1184,7 @@ font-size: 30px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.9)
-  ),url("../images/getintouch.png") fixed center;
+  ),url("../images/getintouch.jpg") fixed center;
   background-size: cover;
   /* padding-top: 90 !important;  */
 }
