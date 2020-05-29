@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(counter);
             fadeOut(preloader);
         }
-    },25);
+    },window.onload);
     //  fadeout
     function fadeOut(element) {
         element.style.opacity = 1;
