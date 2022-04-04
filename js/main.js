@@ -117,7 +117,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Freelancer.","Ansh Ved.", "Designer.", "Developer." ],
+      strings: ["Ansh Ved.", "Designer.", "Developer." ],
       typeSpeed: 100,
       loop: true,
     });
